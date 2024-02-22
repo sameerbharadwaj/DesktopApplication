@@ -188,7 +188,6 @@ def page1():
     root.state('zoomed')
     mylable1=tk.Label(root,text='Ready to start test',font=("Arial", 25))
     mylable1.pack(pady=100)
-    # btn=tk.Button(root,text= "Start Test",command=lambda:[buttonn('sameer'), printcon()],width=70, font=("Arial", 15), bg='green')
     btn=tk.Button(root,text= "Start Test",command=printcommunication,width=70, font=("Arial", 15), bg='green')
     btn.pack(pady=100,ipady=10)
     mylable2=tk.Label(root,text="",font=('Aerial',20))
@@ -198,9 +197,6 @@ def page1():
 
 
 if __name__=='__main__':
-    # addr=''
-    # print(addr)
     root=tk.Tk()
-    # page2()
     page1()
     tk.mainloop()
